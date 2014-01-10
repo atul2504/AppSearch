@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/mainLinear" >    
+	
+	
+    <EditText
+	    android:id="@+id/txtSearch"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/searchHint"
+        android:background="@drawable/edittext_theme"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"/>
+    <ListView
+        android:id="@+id/lstAppList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice">
+    </ListView>
+    <ImageView
+        android:id="@+id/imgNotFound"
+        android:src="@drawable/no_result"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    
+</LinearLayout>
+
+	
